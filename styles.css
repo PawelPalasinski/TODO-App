@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  background-color: rgba(55, 55, 55, 0.1);
+}
+
+.app {
+  width: 300px;
+  height: 500px;
+  border: 5px solid #373737;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.app #addNew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(55, 55, 55, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.app #addNew i {
+  background-color: rgba(55, 55, 55, 0.4);
+  padding: 3px;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=styles.css.map */
