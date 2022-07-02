@@ -61,4 +61,8 @@ body {
 #tasks div span.options i {
   cursor: pointer;
 }
+
+#msg {
+  color: red;
+}
 /*# sourceMappingURL=styles.css.map */
