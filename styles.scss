@@ -45,5 +45,13 @@ body {
         padding: 5px;
         display: grid;
         gap: 5px;
+        & span.options {
+            justify-self: center;
+            display: flex;
+            gap: 20px;
+            & i {
+                cursor: pointer;
+            }
+        }
     }
 }

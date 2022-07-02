@@ -49,4 +49,16 @@ body {
   display: grid;
   gap: 5px;
 }
+
+#tasks div span.options {
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div span.options i {
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */
