@@ -22,16 +22,16 @@
     <div class="app">
       <h4 class="mb-3">TODO App</h4>
       <div id="addNew" data-bs-toggle="modal"
-        data-bs-target="#exampleModal">
+        data-bs-target="#form">
         <span>Add New Task</span>
         <i class="fas fa-plus"></i>
       </div>
       <h5 class="text-center my-3">Tasks</h5>
 
       <!-- Modal -->
-      <div
+      <form
         class="modal fade"
-        id="exampleModal"
+        id="form"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -39,7 +39,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -47,7 +47,20 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">...</div>
+            <div class="modal-body">
+
+                <p>Task Title</p>
+<input class="form-control" type="text" name="" id="textInput">
+<br>
+
+<p>Due Date</p>
+<input class="form-control" type="date" name="" id="dateInput">
+<br>
+
+<p>Description</p>
+<textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
+
+            </div>
             <div class="modal-footer">
               <button
                 type="button"
@@ -57,12 +70,12 @@
                 Close
               </button>
               <button type="button" class="btn btn-primary">
-                Save changes
+                Add
               </button>
             </div>
           </div>
         </div>
-      </div>
+    </form>
 
       <div id="tasks">
         <div>
