@@ -33,4 +33,20 @@ body {
   padding: 3px;
   border-radius: 3px;
 }
+
+#tasks {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+#tasks div {
+  background-color: rgba(55, 55, 55, 0.2);
+  border: 3px solid rgba(55, 55, 55, 0.5);
+  border-radius: 6px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  gap: 5px;
+}
 /*# sourceMappingURL=styles.css.map */
