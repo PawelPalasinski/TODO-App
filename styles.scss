@@ -1,6 +1,10 @@
 body {
   font-family: sans-serif;
   background-color: rgba(55, 55, 55, 0.1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app {
