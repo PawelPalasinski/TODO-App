@@ -4,6 +4,7 @@ const form = document.querySelector("#form");
 const textInput = document.querySelector("#textInput");
 const dateInput = document.querySelector("#dateInput");
 const textarea = document.querySelector("#textarea");
+const add = document.querySelector("#add");
 const msg = document.querySelector("#msg");
 
 // Main page - HTML elements
@@ -23,6 +24,8 @@ let formValidation = () => {
     console.log("great!");
     msg.innerHTML = "";
     acceptData();
+    add.setAttribute("data-bs-dismiss", "modal");
+    add.click();
   }
 };
 
@@ -33,6 +36,7 @@ let acceptData = () => {
   data["date"] = dateInput.value;
   data["description"] = textarea.value;
   createTasks();
+  resetForm();
 };
 
 let createTasks = () => {
@@ -47,4 +51,10 @@ let createTasks = () => {
           </span>
         </div>
     `;
+};
+
+let resetForm = () => {
+  textInput.value = "";
+  dateInput.value = "";
+  textarea.value = "";
 };
