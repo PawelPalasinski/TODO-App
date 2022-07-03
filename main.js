@@ -6,11 +6,9 @@ const dateInput = document.querySelector("#dateInput");
 const textarea = document.querySelector("#textarea");
 const msg = document.querySelector("#msg");
 
-
 // Main page - HTML elements
 
 const tasks = document.querySelector("#tasks");
-
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -34,13 +32,19 @@ let acceptData = () => {
   data["text"] = textInput.value;
   data["date"] = dateInput.value;
   data["description"] = textarea.value;
-
-  console.log(data);
+  createTasks();
 };
 
 let createTasks = () => {
-
-}
-
-
-// 1:34:39
+  tasks.innerHTML += `
+          <div>
+          <span class="fw-bold">${data.text}</span>
+          <span class="small text-secondary">${data.date}</span>
+          <p>${data.description}</p>
+          <span class="options">
+            <i class="fas fa-edit"></i>
+            <i class="fas fa-trash"></i>
+          </span>
+        </div>
+    `;
+};
