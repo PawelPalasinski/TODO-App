@@ -48,7 +48,7 @@ let createTasks = () => {
           <p>${data.description}</p>
           <span class="options">
             <i class="fas fa-edit"></i>
-            <i class="fas fa-trash"></i>
+            <i onClick="deleteTask(this)" class="fas fa-trash"></i>
           </span>
         </div>
     `;
@@ -59,3 +59,9 @@ let resetForm = () => {
   dateInput.value = "";
   textarea.value = "";
 };
+
+// Delete
+
+let deleteTask = (e) => {
+    e.parentElement.parentElement.remove();
+}
