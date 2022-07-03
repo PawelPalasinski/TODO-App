@@ -75,6 +75,7 @@ let deleteTask = (e) => {
     e.parentElement.parentElement.remove();
     data.splice(e.parentElement.parentElement.id, 1);
     localStorage.setItem("data", JSON.stringify(data));
+    console.log(data);
 };
 
 // Edit
@@ -84,7 +85,7 @@ let editTask = (e) => {
   textInput.value = selectedTask.children[0].innerHTML;
   dateInput.value = selectedTask.children[1].innerHTML;
   textarea.value = selectedTask.children[2].innerHTML;
-  selectedTask.remove();
+  deleteTask(e);
 };
 
 // get tasks list from local storage
