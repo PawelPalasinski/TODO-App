@@ -1,4 +1,4 @@
-//Modatl - HTML elements
+//HTML elements
 
 const form = document.querySelector("#form");
 const textInput = document.querySelector("#textInput");
@@ -6,8 +6,6 @@ const dateInput = document.querySelector("#dateInput");
 const textarea = document.querySelector("#textarea");
 const add = document.querySelector("#add");
 const msg = document.querySelector("#msg");
-
-// Main page - HTML elements
 
 const tasks = document.querySelector("#tasks");
 
@@ -24,8 +22,11 @@ let formValidation = () => {
     console.log("great!");
     msg.innerHTML = "";
     acceptData();
-    add.setAttribute("data-bs-dismiss", "modal");
+    add.setAttribute("data-bs-dismiss", "modal"); // the same as close button
     add.click();
+    (() => {
+      add.setAttribute("data-bs-dismiss", ""); // return to the previous state
+    })(); // IIFE
   }
 };
 
