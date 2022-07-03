@@ -56,7 +56,7 @@ let createTasks = () => {
           <p>${x.description}</p>
           <span class="options">
             <i onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
-            <i onClick="deleteTask(this)" class="fas fa-trash"></i>
+            <i onClick="deleteTask(this);createTasks()" class="fas fa-trash"></i>
           </span>
         </div>
     `);
